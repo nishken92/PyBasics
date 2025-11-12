@@ -27,4 +27,8 @@ mystr = "SilambarasanTR"
 for i in mystr:
     print(i)
 
-# The for loop creates an iterator object and 
+# The for loop creates an iterator object and applies next method on each element.
+
+myfilms = ["vadachennai", "madras", "puduppettai"]
+for i in myfilms:
+    print(i)
