@@ -1,3 +1,4 @@
-mylist = [1]
-if mylist is not []:
-    print("not empty")
+strs = ["flower","flow","flight"]
+strs.pop(1)
+print(strs)
+print(strs.index("flight"))
