@@ -70,3 +70,29 @@ c.next = d
 
 print(a.data,b.data,c.data,d.data)
 
+
+
+
+class SayNode:
+    def __init__(self,value):
+        self.value = value
+        self.next = None
+
+class Saystack:
+    def __init__(self):
+        self.size = 0
+        self.head = None
+
+    def push(self,value):
+        new_node = SayNode(value)
+        self.head = new_node
+
+a = Saystack()
+a.push(256)
+
+
+
+
+
+
+
