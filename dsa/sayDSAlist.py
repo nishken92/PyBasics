@@ -26,3 +26,6 @@ def minVal(testlist):
 
 value = minVal(a)
 print("The lowest number of the array is:", value)
+
+# For big data sets, the algorithms takes time to process, which needs optimization.
+
