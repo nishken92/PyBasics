@@ -1,0 +1,1 @@
+# TREES are hierarchical structures
