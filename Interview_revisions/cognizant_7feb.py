@@ -173,5 +173,51 @@ print(district)
 # Negative indexing starts from the last item
 print(listing[-2])
 
+listing.append("Ernakulam")
+print(listing)
+listing.append(("Kottayam","Kollam","Alappuzha","Kozhikode"))
+print(listing)
+
+listing.pop()
+print(listing)
+listing.append("Kottayam")
+listing.append("Kollam")
+listing.append("Alappuzha")
+listing.append("Kozhikode")
+print(listing)
+
+# Below will return the index number 3 and 4, but doesn't include 5
+print(listing[3:5])
+
+# Insert method will add a item at specific index
+listing.insert(4,"Wayanad")
+print(listing)
+
+#extend method adds to listing
+listing2 = ["Kannur"]
+listing.extend(listing2)
+print(listing)
+
+# clear is a list method that clears the list, del is a built in python method that deletes the list
+
+x = range(3,17,2)
+print(x)
+for i in x:
+    print("Hello World")
+
+print(listing)
+
+i = 0
+while i < (len(listing)):
+    print(listing[i])
+    i += 1
+
+sqrt = []
+for i in range(1,11,1):
+    sqrt.append(i**2)
+print(sqrt)
+
+
+
 
 
