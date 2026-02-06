@@ -325,6 +325,30 @@ print(mul)
 
 print(z.index(4))
 
-print("What is your name")
-name = input()
-print(f"Hello, {name} !!")
+
+
+
+
+
+# Stack
+
+stack = []
+
+stack.append(10)
+stack.append(20)
+stack.append(30)
+stack.append(40)
+
+print(stack)
+
+print(stack[-1])
+
+poppedElement = stack.pop()
+print(stack)
+
+if bool(stack):
+    print("Not Empty")
+else:
+    print("Empty")
+
+print(len(stack))
