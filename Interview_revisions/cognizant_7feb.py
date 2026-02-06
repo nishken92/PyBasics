@@ -218,6 +218,113 @@ for i in range(1,11,1):
 print(sqrt)
 
 
+# performs the sorting on the list itself
+print(listing)
+listing.sort(reverse=True)
+print(listing)
+
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+
+# list is built in but copy is list function. Both perform copy action
+
+x = [1,2,3,4]
+y = [5,6,7,8]
+x.extend(y)
+print(x)
+
+list3 = x + y
+print(list3)
+
+# Match is a switch case and underscore is a default case
+
+day = 7
+match day:
+    case 9:
+        print("Day is Nine")
+    case 7 if day != 8:
+        print("entered the next")
+
+day = 5
+month = "June"
+match day:
+    case 0 if month == "June":
+        print("It is a Sunday of June month")
+    case _:
+        print("Not the expected day")
 
 
+# Math is a mathematical library
 
+import math
+
+iterable = range(0,100,10)
+print(min(iterable))
+print(max(iterable))
+
+print(abs(-7.345))
+
+print(pow(2,3))
+
+# ceil() and floor() functions will round off the float number to lower and upper limits
+
+# None =  False = "" . A function not returing anything explicitely
+# returns none by default
+
+def myfunc():
+    x = 5
+
+y = myfunc()
+
+print(type(y))
+
+# Set is immutable
+
+# F Strings
+# Anything inside curly brackets in an f string will be executed in real time
+# 
+
+statement = f"the statement is that i can do math in string as sqrt of 4 is {math.sqrt(4)}"
+print(statement)
+
+x = "BANANA"
+st1 = f"{x.lower()}"
+print(st1)
+
+mylist = [{
+    "film" : "Vada Chennai",
+    "Director" : "Vetrimaran"
+},
+{
+    "film" : "Madras",
+    "Director" : "Pa Ranjith"
+}]
+
+for i in mylist:
+    print(i["film"], f"{'':^30}" ,f"{i["Director"]:<30}")
+
+# Tuple
+
+a = (1,2,3,4,5)
+b = list(a)
+print(a,b)
+
+# Tuple is immutable
+
+cinema = ("Pariyerum Perumal","Karnan","Maamannan","Vaazhai","Bison")
+(a,*b,c) = cinema
+print(b)
+
+z = (1,2,3,4)
+mul = z * 10
+print(mul)
+
+print(z.index(4))
+
+print("What is your name")
+name = input()
+print(f"Hello, {name} !!")
