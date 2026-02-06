@@ -7,6 +7,14 @@ class TreeNode:
         self.data = data
         self.left = None
         self.right = None
+    
+def traversal(node):
+    if node is None:
+        return
+    print(node.data)
+    traversal(node.left)
+    traversal(node.right)
+
 
 a = TreeNode("A")
 b = TreeNode("B")
@@ -23,4 +31,4 @@ b.right = e
 c.left = f
 c.right = g
 
-print(c.right.data)
+print(traversal(a))
