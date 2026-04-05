@@ -352,3 +352,38 @@ else:
     print("Empty")
 
 print(len(stack))
+
+
+
+# Linked List
+
+class LLNode:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+
+class sayStack:
+    def __init__(self):
+        self.size = 0
+        self.head = None
+    
+    def append(self,value):
+        pass
+
+
+dict1 = [{
+    "age" : 33
+},
+{
+    "age" : 42
+},{
+    "age" : 29
+}]
+
+list1 = []
+
+for i in dict1:
+    list1.append(i["age"])
+
+list1.sort()
+print(list1)
